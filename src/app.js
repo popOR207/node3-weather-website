@@ -22,7 +22,7 @@ hbs.registerPartials(pratialsPath)
 //setup static directory to use
 app.use(publicDirectoryPath)
 
-
+console.log('hello')
 
 app.get('', (req, res) => {
     res.render('index', {
