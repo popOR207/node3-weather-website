@@ -58,7 +58,7 @@ app.get('/weather', (req, res) => {
     }
     
     geocode(address, (error, { lat, lon, place } = {}) => {
-        forecast(lat, lon, (err, { location, weather } = {}) => {
+        forecast(lat, lon, (err, { location, weather, temperature} = {}) => {
             if (err) {
                 console.log('error:', err)
                 res.send({err})
@@ -66,7 +66,8 @@ app.get('/weather', (req, res) => {
                 res.send({ //send - we want the JSON
                     forecast: weather,
                     location: location,
-                    address: place
+                    address: place,
+                    temperature: temperature
                 })
             }
         })

@@ -15,7 +15,7 @@ const fetchAddress = (address) => fetch(`/weather?address=${address}`).then((res
         document.querySelector('#address').innerHTML = ''
         document.querySelector('#location').innerHTML = ''
     } else {
-        document.querySelector('#forecast').innerHTML = response.forecast
+        document.querySelector('#forecast').innerHTML = response.forecast + ", " + response.temperature + " degrees"
         document.querySelector('#address').innerHTML = response.address
         document.querySelector('#location').innerHTML = response.location
     }
