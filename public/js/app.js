@@ -3,7 +3,7 @@ console.log('client side java script os loaded!')
 
 //const inputBox = document.querySelector('#inputBox')
 
-const fetchAddress = (address) => fetch(`http://localhost:3000/weather?address=${address}`).then((response) => {
+const fetchAddress = (address) => fetch(`/weather?address=${address}`).then((response) => {
     if (response.ok) {
         return response.json()
     } else {
