@@ -1,0 +1,45 @@
+body {
+    color: rgb(54, 43, 43);
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+#inputdiv button {
+    cursor: pointer;
+    background: #bb73b1;
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    border: 1px solid #888888;
+
+}
+
+input {
+    border: 3px solic blue;
+    padding: 3px;
+}

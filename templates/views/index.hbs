@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    {{>header}}
+    <p>{{subhead}}</p>
+{{!--     <div id="inputdiv">
+        <input type="text" placeholder="Write a location" id="inputBox">
+        <button class="getWeather">Get weather!</button>
+    </div>
+ --}}
+    <form id="inputdiv">
+        <input type="text" placeholder="Write a location" id="inputBox">
+        <button class="getWeather">Get weather!</button>
+    </form>
+    <div id='weatherResult'>
+        <p id="forecast"></p>
+        <p id="address"></p>
+        <p id="location"></p>
+
+    </div>
+    <footer>
+        {{>footer}}
+    </footer>
+
+        <script src="/js/app.js"></script>
+</body>
+</html>
